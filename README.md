@@ -28,14 +28,69 @@ CSDL sử dụng trong bài: <img width="1446" height="958" alt="image" src="htt
 ### a) Thêm URl cho http in: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/81492c4a-1e20-4e2b-a890-ae269fa4f835" /> <br>
 ### b) Add các thông tin từ Database để Deploy: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/186949ed-31af-4634-9996-c5f7a06efb19" /> <br>
 ### c) Chỉnh sửa properties cho DB node: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/9b28edea-ccfb-4df7-9244-07aecf5a6cab" /> <br>
-### d) Code truy vấn đơn giản tìm thông tin trong bảng đã tạo: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/650ad015-1912-4ebc-b8a8-4f1684162742" /> <br>
+### d) Code truy vấn đơn giản tìm thông tin trong bảng đã tạo(Có thể tùy chỉnh sau này): <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/650ad015-1912-4ebc-b8a8-4f1684162742" /> <br>
 ### e) Full Flow của bài: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/590915fa-fa54-49f4-9faf-ff2ec1cd3b07" /> <br>
 ### f) Kết quả sau khi truy cập trang ( đã kết nối và truy xuất thành công thông tin từ DB): <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/0be3952e-ebed-4218-acb1-81a614db04c4" /> <br>
-## 6. Tạo FE
+## 6. Tạo FE và gọi API từ BE <br>
 ### a) Tạo folder luonghoangviet có chưa các file code html, css,js: <img width="1900" height="1132" alt="image" src="https://github.com/user-attachments/assets/44c488e1-c0a7-4821-95a6-c615f4d4d9e3" /> <br>
-### b) Cài đặt Static node cho Nodered. Chạy cmd trên thư mục .nodered với câu lệnh sau: npm install node-red-contrib-static. Sau đó Restart Nodered để cập nhập node mới ta được: 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/19483ed1-377e-4cca-9e8d-74a24c0a9949" /> <br>
-### c)
+### b) Sử dụng các công cụ để mở Front-END thông qua Server ( ở đây sử dụng Live Server Extension của VS Code):<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/24de66aa-98a0-4ca0-adca-d360307f8cff" /> <br>
+### c) Gọi API từ BE Node-red và được kết quả trả về từ DB: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/a3f98485-1d34-490d-982b-60049e73d041" /> <br>
+## 7. Nhận xét bài làm
+### a) Quá trình cài đặt phần mềm và thư viện: <br>
+Với các phần mềm: <br> 
+- Apache: Là một phần mềm web server open source để phục vụ các trang web và ứng dụng web <br>
++ Phục vụ nội dung web: Apache xử lý các yêu cầu HTTP/HTTPS từ trình duyệt và gửi lại nội dung như HTML, CSS, hình ảnh, video… từ máy chủ đến người dùng. <br>
++ Hỗ trợ trang web tĩnh và động: Có thể phục vụ các trang web đơn giản (tĩnh) hoặc tích hợp với các ngôn ngữ như PHP, Python để chạy ứng dụng web phức tạp (động).<br>
++ Tùy biến linh hoạt: Apache có kiến trúc mô-đun, cho phép thêm các chức năng như bảo mật SSL, xác thực người dùng, ghi log, rewrite URL… thông qua các module như mod_ssl, mod_rewrite, mod_auth <br>
++ Quản lý nhiều website: Hỗ trợ Virtual Hosts, cho phép chạy nhiều website trên cùng một máy chủ vật lý.<br>
++ Tích hợp dễ dàng: Có thể kết hợp với các hệ quản trị cơ sở dữ liệu như MySQL, PostgreSQL để xây dựng hệ thống web hoàn chỉnh.<br>
+- Nodejs: Là một môi trường chạy JavaScript mã nguồn mở và đa nền tảng, cho phép sử dụng JavaScript để xây dựng các ứng dụng phía máy chủ (backend). <br>
++ Node.js cho phép viết mã backend bằng JavaScript. <br>
++ Xây dựng ứng dụng web: Tạo API, xử lý yêu cầu HTTP, kết nối cơ sở dữ liệu, xác thực người dùng… <br>
++ Ứng dụng thời gian thực: Rất phù hợp cho các ứng dụng như chat, game online, hoặc hệ thống thông báo nhờ khả năng xử lý bất đồng bộ. <br>
++ Tự động hóa và công cụ dòng lệnh: Dùng để viết các script tự động hóa hoặc công cụ CLI. <br>
++ Hiệu năng cao: Dựa trên engine V8 của Google Chrome, giúp xử lý nhanh và hiệu quả. <br>
++ Bất đồng bộ và không chặn (non-blocking): Giúp xử lý nhiều yêu cầu cùng lúc mà không bị nghẽn. <br>
++ Hệ sinh thái mạnh mẽ: Có hàng trăm ngàn thư viện qua npm (Node Package Manager). <br>
+- Node-RED: Là một công cụ lập trình trực quan mã nguồn mở, được thiết kế để giúp kết nối các thiết bị phần cứng, API và dịch vụ trực tuyến một cách dễ dàng — đặc biệt trong lĩnh vực Internet of Things (IoT) và tự động hóa. <br>
++ Tạo luồng xử lý dữ liệu (flows): Có thể kéo-thả các “nút” (nodes) để xây dựng quy trình xử lý dữ liệu mà không cần viết nhiều mã. <br>
++ Kết nối thiết bị IoT: Dễ dàng tích hợp cảm biến, thiết bị thông minh, và các dịch vụ đám mây như MQTT, HTTP, WebSocket…<br>
++ Tự động hóa quy trình: Dùng trong nhà thông minh, công nghiệp, hoặc hệ thống giám sát để tự động hóa các hành động dựa trên dữ liệu đầu vào.<br>
++ Xử lý dữ liệu thời gian thực: Phù hợp cho các ứng dụng cần phản hồi nhanh như cảnh báo, điều khiển từ xa, hoặc dashboard giám sát.<br>
+Với các thư viện được cài đặt trên Node-RED: <br>
+- node-red-contrib-mssql-plus: Kết nối và truy vấn cơ sở dữ liệu Microsoft SQL Server (MSSQL) từ Node-RED. <br>
+- node-red-node-mysql: Cho phép Node-RED giao tiếp với cơ sở dữ liệu MySQL để thực hiện các truy vấn SQL.<br>
+- node-red-contrib-telegrambot: Tích hợp với Telegram Bot API để gửi/nhận tin nhắn, tương tác với người dùng qua Telegram.<br>
+- node-red-contrib-moment: Xử lý và định dạng thời gian, ngày tháng dễ dàng bằng thư viện Moment.js.<br>
+- node-red-contrib-influxdb: Gửi và truy vấn dữ liệu từ cơ sở dữ liệu thời gian thực InfluxDB — thường dùng trong IoT và giám sát.<br>
+- node-red-contrib-duckdns: Tự động cập nhật địa chỉ IP động lên dịch vụ DuckDNS — hữu ích khi triển khai Node-RED tại nhà.<br>
+- node-red-contrib-cron-plus: Tạo lịch trình linh hoạt và nâng cao (cron jobs) để kích hoạt flows theo thời gian định sẵn.<br>
+### b) KẾT LUẬN
+Qua bài làm công dụng chính của các phần mềm và thư viện cụ thể như sau:
+- Apache: Sử dụng làm web Server
+- NodeJS và Node-RED: Sử dụng làm Back-END (Low code) kết nối với Database SSMS để trả về giá trị mà người dùng yêu cầu
+- Các thư viện đã cài đặt chủ yếu phục vụ việc kết nối DB và thiết kế Back-END từ Node-RED và có thể tương tác với User thông qua Telegram <br>
+=> Các phần mềm trên hỗ trợ Dev tiết kiệm phần lớn thời gian viết BE truyền thống cũng như dễ dàng quản lý BE hơn.
+## 8. Phần tự làm thêm
+### a) Tạo Bot Telegram để gửi dữ liệu về mỗi khi User gọi API từ Front END (Sử dụng Bot Father của Telegram):<img width="1916" height="1040" alt="image" src="https://github.com/user-attachments/assets/598f1725-26c0-4617-8782-9a0702a95e08" /> <br>
+### b) Thiết kế lại Flow trên Node-RED để gửi dữ liệu về: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/494b1021-bfd0-41ed-8d4a-e2a5d6992408" /> <br>
+### c) Call API và thấy tin nhắn được BOT gửi về: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/6ea9819b-f4a2-4a02-88ea-00fe32bb8c18" /><br>
+### Dữ liệu BOT gửi về là dữ liệu thô, khá khó đọc. Có thể sửa code trong NODE "Gửi Telegram" để lọc dữ liệu giúp người dùng đọc dễ hơn.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
