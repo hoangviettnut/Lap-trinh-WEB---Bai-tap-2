@@ -65,12 +65,33 @@ Với các thư viện được cài đặt trên Node-RED: <br>
 - node-red-contrib-influxdb: Gửi và truy vấn dữ liệu từ cơ sở dữ liệu thời gian thực InfluxDB — thường dùng trong IoT và giám sát.<br>
 - node-red-contrib-duckdns: Tự động cập nhật địa chỉ IP động lên dịch vụ DuckDNS — hữu ích khi triển khai Node-RED tại nhà.<br>
 - node-red-contrib-cron-plus: Tạo lịch trình linh hoạt và nâng cao (cron jobs) để kích hoạt flows theo thời gian định sẵn.<br>
-### b) KẾT LUẬN
-Qua bài làm công dụng chính của các phần mềm và thư viện cụ thể như sau:
-- Apache: Sử dụng làm web Server
-- NodeJS và Node-RED: Sử dụng làm Back-END (Low code) kết nối với Database SSMS để trả về giá trị mà người dùng yêu cầu
+### b) Sử dụng Node-RED để tạo API Back-END
+- Khi dùng Node-RED để tạo API Back-End, tức là đang xây dựng một hệ thống mà các ứng dụng khác (ví dụ: web, mobile) có thể gửi yêu cầu (request) đến và nhận dữ liệu phản hồi (response) từ đó.
+- Về mặt kỹ thuật:
++ Tạo điểm truy cập (endpoint): Ví dụ /api/hello là một địa chỉ mà client có thể gọi đến.
++ Xử lý dữ liệu: Có thể xử lý dữ liệu đầu vào (từ client gửi lên), truy vấn cơ sở dữ liệu, hoặc thực hiện logic tùy ý.
++ Trả kết quả: Sau khi xử lý thì gửi lại kết quả cho client (thường là JSON).
+- Luồng hoạt động của một API trong Node-RED
++ Client gửi yêu cầu đến địa chỉ như http://localhost:1880/luonghoangviet
++ Node-RED nhận yêu cầu qua node http in
++ Xử lý logic bằng node function, change, hoặc kết nối với DB
++ Trả kết quả qua node http response
+### c) Cách FE tương tác với BE
+- Gửi yêu cầu (Request):
++ Front-End dùng fetch, axios, hoặc thư viện HTTP để gửi yêu cầu đến API của Back-End.
+- Back-End xử lý yêu cầu:
++ Nhận request từ Front-End.
++ Thực hiện logic: truy vấn database, xử lý dữ liệu, kiểm tra xác thực…
+- Trả phản hồi (Response):
++ Back-End gửi lại dữ liệu (thường là JSON) cho Front-End.
++ Front-End nhận dữ liệu và hiển thị lên giao diện.
+### d) KẾT LUẬN
+Qua bài làm ta có kết luận ngắn gọn như sau: <br>
+- Apache: Sử dụng làm web Server<br>
+- NodeJS và Node-RED: Sử dụng làm Back-END (Low code) kết nối với Database SSMS để trả về giá trị mà người dùng yêu cầu. <br>
 - Các thư viện đã cài đặt chủ yếu phục vụ việc kết nối DB và thiết kế Back-END từ Node-RED và có thể tương tác với User thông qua Telegram <br>
-=> Các phần mềm trên hỗ trợ Dev tiết kiệm phần lớn thời gian viết BE truyền thống cũng như dễ dàng quản lý BE hơn.
+=> Các phần mềm trên hỗ trợ Dev tiết kiệm phần lớn thời gian viết BE truyền thống cũng như dễ dàng quản lý BE hơn.<br>
+- FE tương tác với BE bằng cách: gửi yêu cầu về BE, BE xử lý và phản hồi cho FE.<br>
 ## 8. Phần tự làm thêm
 ### a) Tạo Bot Telegram để gửi dữ liệu về mỗi khi User gọi API từ Front END (Sử dụng Bot Father của Telegram):<img width="1916" height="1040" alt="image" src="https://github.com/user-attachments/assets/598f1725-26c0-4617-8782-9a0702a95e08" /> <br>
 ### b) Thiết kế lại Flow trên Node-RED để gửi dữ liệu về: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/494b1021-bfd0-41ed-8d4a-e2a5d6992408" /> <br>
