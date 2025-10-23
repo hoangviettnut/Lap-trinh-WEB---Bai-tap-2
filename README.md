@@ -24,7 +24,16 @@ CSDL sử dụng trong bài: <img width="1446" height="958" alt="image" src="htt
 ### c) Sửa file và mã hóa PW: <img width="1846" height="208" alt="image" src="https://github.com/user-attachments/assets/22d5e0af-8ad8-4a95-9fd5-665bea5566ea" /> <br>
 ### d) Restart Nodered: <img width="1103" height="639" alt="image" src="https://github.com/user-attachments/assets/357fc04c-7c6a-478d-9b13-b7f7a30f09df" /> <BR>
 ĐĂNG NHẬP NODERED SAU KHI KHỞI ĐỘNG LẠI: <img width="1918" height="1093" alt="image" src="https://github.com/user-attachments/assets/b1d58147-d832-4050-a2d3-89238734be17" /> <BR>
-## 5. Tạo API BE bằng Node-red
+## 5. Tạo API BE bằng Node-red <br>
+### a) Thêm URl cho http in: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/81492c4a-1e20-4e2b-a890-ae269fa4f835" /> <br>
+### b) Add các thông tin từ Database để Deploy: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/186949ed-31af-4634-9996-c5f7a06efb19" /> <br>
+### c) Chỉnh sửa properties cho DB node: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/9b28edea-ccfb-4df7-9244-07aecf5a6cab" /> <br>
+### d) Code truy vấn đơn giản tìm thông tin trong bảng đã tạo: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/650ad015-1912-4ebc-b8a8-4f1684162742" /> <br>
+### e) Full Flow của bài: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/590915fa-fa54-49f4-9faf-ff2ec1cd3b07" /> <br>
+### f) Kết quả sau khi truy cập trang ( đã kết nối và truy xuất thành công thông tin từ DB): <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/0be3952e-ebed-4218-acb1-81a614db04c4" /> <br>
+## 6. Tạo FE
+
+
 
 
 
