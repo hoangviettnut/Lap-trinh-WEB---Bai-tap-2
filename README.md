@@ -32,6 +32,12 @@ CSDL sử dụng trong bài: <img width="1446" height="958" alt="image" src="htt
 ### e) Full Flow của bài: <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/590915fa-fa54-49f4-9faf-ff2ec1cd3b07" /> <br>
 ### f) Kết quả sau khi truy cập trang ( đã kết nối và truy xuất thành công thông tin từ DB): <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/0be3952e-ebed-4218-acb1-81a614db04c4" /> <br>
 ## 6. Tạo FE
+### a) Tạo folder luonghoangviet có chưa các file code html, css,js: <img width="1900" height="1132" alt="image" src="https://github.com/user-attachments/assets/44c488e1-c0a7-4821-95a6-c615f4d4d9e3" /> <br>
+### b) Cài đặt Static node cho Nodered. Chạy cmd trên thư mục .nodered với câu lệnh sau: npm install node-red-contrib-static. Sau đó Restart Nodered để cập nhập node mới ta được: 
+<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/19483ed1-377e-4cca-9e8d-74a24c0a9949" /> <br>
+### c)
+
+
 
 
 
