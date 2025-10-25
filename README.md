@@ -11,7 +11,7 @@
 <img width="1426" height="823" alt="image" src="https://github.com/user-attachments/assets/888c96a1-30e6-4bb8-9694-fecd32fc493d" /> <br>
 Fake IP cho web
 <img width="1426" height="823" alt="image" src="https://github.com/user-attachments/assets/1d5d70f0-6506-4c51-9742-cfd8020f4265" /> <br>
-### d) Cài đặt khởi động Apache sau đó mở localhost xem Apache Server chạy hay chưa: 
+### d) Cài đặt và khởi động Apache sau đó mở localhost xem Apache Server chạy hay chưa: 
 <img width="1919" height="1136" alt="image" src="https://github.com/user-attachments/assets/fef4f847-e685-4443-a292-000edd173ae8" /> <br>
 ## 2. CÀI ĐẶT NODE JS VÀ NODERED <BR>
 CÀI ĐẶT NODE JS: <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/809408b1-ab75-406a-9c9d-171e4a6855ef" /> <br>
