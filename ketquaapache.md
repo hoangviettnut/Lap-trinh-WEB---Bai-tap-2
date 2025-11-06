@@ -1,1 +1,0 @@
-Đây là kết quả khi chạy trên Apache. Do khi trước bản thân em đã paste nhầm ảnh chạy bằng Live Server của VS CODE: <img width="1918" height="1092" alt="image" src="https://github.com/user-attachments/assets/15c56b99-77ec-47ea-b3d4-5244428b25ba" />
